@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using JFGM20250319.AppWebMVC.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace JFGM20250319.AppWebMVC.Controllers
 {
+    [Authorize]
     public class CategoriesController : Controller
     {
         private readonly Test20250319DbContext _context;
